@@ -1,0 +1,26 @@
+@page "/dashboard"
+
+@layout DashboardLayout
+
+<PageTitle>Dashboard</PageTitle>
+
+<h1 style="color: var(--secondaryColor);">Welcome to your own dashboard</h1>
+
+<p role="status">Generated link: @currentLink</p>
+
+<button class="btn btn-primary" @onclick="GenerarLink">Generate link</button>
+
+<div>
+    <label for="primaryColorInput">Primary Color:</label>
+    <input id="primaryColorInput" type="color" @bind="newPrimaryColor"/>
+</div>
+
+@code {
+    private string currentLink = "";
+
+    private void GenerarLink()
+    {
+        currentLink = "http://localhost:5134/?ref=link100%realNoFakeLinkenMegaUpload.com";
+
+    }
+}
