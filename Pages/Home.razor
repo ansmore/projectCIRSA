@@ -1,7 +1,38 @@
 ﻿@page "/"
+@inject NavigationManager NavigationManager
 
-<PageTitle>Home</PageTitle>
+<div class="auth-buttons">
+    <button @onclick="@(() => NavigationManager.NavigateTo("/login"))">Iniciar Sesión</button>
+</div>
 
-<h1>Hello, world!</h1>
+<h1>Bienvenidos a CIRSA</h1>
+<p>Descubre las mejores oportunidades de afiliados en el mundo del juego y las apuestas.</p>
 
-Welcome to your new app.
+<div class="features">
+    <div class="feature">
+        <h2>Facilidad de Uso</h2>
+        <p>Una plataforma intuitiva y fácil de usar, diseñada tanto para principiantes como para expertos.</p>
+    </div>
+    <div class="feature">
+        <h2>Herramientas Personalizables</h2>
+        <p>Personaliza tu dashboard y aprovecha al máximo nuestras herramientas de análisis.</p>
+    </div>
+    <div class="feature">
+        <h2>Soporte Constante</h2>
+        <p>Nuestro equipo de soporte está siempre disponible para ayudarte en cada paso del camino.</p>
+    </div>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        var uri = new Uri(NavigationManager.Uri);
+
+        var queryParams = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+        if (queryParams.ContainsKey("ref") && queryParams["ref"] == "link100%realNoFakeLinkenMegaUpload.com")
+        {
+            NavigationManager.NavigateTo("/client-register");
+        }
+    }
+}
