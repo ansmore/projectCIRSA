@@ -1,26 +1,54 @@
+<!-- Dashboard.razor -->
+
 @page "/dashboard"
 
 @layout DashboardLayout
 
 <PageTitle>Dashboard</PageTitle>
 
-<h1 style="color: var(--secondaryColor);">Welcome to your own dashboard</h1>
+<div class="dropdown-container">
+    <select @onchange="CambiarColor">
+        <option value="default">Seleccionar Color</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+        <option value="red">Rojo</option>
+    </select>
+</div>
 
-<p role="status">Generated link: @currentLink</p>
-
-<button class="btn btn-primary" @onclick="GenerarLink">Generate link</button>
-
-<div>
-    <label for="primaryColorInput">Primary Color:</label>
-    <input id="primaryColorInput" type="color" @bind="newPrimaryColor"/>
+<div class="content-container" style="@GetBackgroundColor()">
+    <h1>Welcome to your own dashboard</h1>
+    <div>
+        <p role="status">Generated link: @currentLink</p>
+        <button class="btn btn-primary" @onclick="GenerarLink">Generate link</button>
+    </div>
 </div>
 
 @code {
     private string currentLink = "";
+    private string selectedColor = "";
 
     private void GenerarLink()
     {
         currentLink = "http://localhost:5134/?ref=link100%realNoFakeLinkenMegaUpload.com";
+    }
 
+    private void CambiarColor(ChangeEventArgs e)
+    {
+        selectedColor = e.Value?.ToString() ?? "default";
+    }
+
+    private string GetBackgroundColor()
+    {
+        switch (selectedColor)
+        {
+            case "blue":
+                return ".dashboard-layout{background-color: #3498db; color: white;};";
+            case "green":
+                return "background-color: #2ecc71; color: white;";
+            case "red":
+                return "background-color: #e74c3c; color: white;";
+            default:
+                return ""; // Deja el estilo predeterminado
+        }
     }
 }

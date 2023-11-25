@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\projectCIRSA.csproj": {}
+    "C:\\Users\\soufi\\Desktop\\projectCIRSA\\projectCIRSA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\projectCIRSA.csproj": {
+    "C:\\Users\\soufi\\Desktop\\projectCIRSA\\projectCIRSA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\projectCIRSA.csproj",
+        "projectUniqueName": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\projectCIRSA.csproj",
         "projectName": "projectCIRSA",
-        "projectPath": "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\projectCIRSA.csproj",
-        "packagesPath": "C:\\Users\\Alfred\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\obj\\",
+        "projectPath": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\projectCIRSA.csproj",
+        "packagesPath": "C:\\Users\\soufi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alfred\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\soufi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
