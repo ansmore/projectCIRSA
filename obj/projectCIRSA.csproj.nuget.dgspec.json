@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alfred\\projectCIRSA\\projectCIRSA.csproj": {}
+    "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\projectCIRSA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alfred\\projectCIRSA\\projectCIRSA.csproj": {
+    "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\projectCIRSA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alfred\\projectCIRSA\\projectCIRSA.csproj",
+        "projectUniqueName": "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\projectCIRSA.csproj",
         "projectName": "projectCIRSA",
-        "projectPath": "C:\\Users\\Alfred\\projectCIRSA\\projectCIRSA.csproj",
+        "projectPath": "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\projectCIRSA.csproj",
         "packagesPath": "C:\\Users\\Alfred\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alfred\\projectCIRSA\\obj\\",
+        "outputPath": "C:\\Users\\Alfred\\Desktop\\projectCIRSA-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alfred\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,10 @@
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.WebUtilities": {
               "target": "Package",
               "version": "[8.0.0, )"
             },

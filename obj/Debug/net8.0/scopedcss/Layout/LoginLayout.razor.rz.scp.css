@@ -1,0 +1,68 @@
+/* Estilos generales para el layout de login y registro */
+.login-layout[b-d33vficdr5] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el formulario se centre verticalmente en la página */
+    padding: 20px;
+    background-color: #956328;
+    color: #fff;
+}
+
+/* Estilo para los contenedores de formularios */
+.login-container[b-d33vficdr5], .register-container[b-d33vficdr5] {
+    width: 100%;
+    max-width: 400px; /* Máximo ancho del contenedor */
+    background-color: #A6732C;
+    padding: 30px; /* Aumento del padding para más espacio */
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    text-align: center;
+}
+
+/* Estilos para los grupos de formulario */
+.form-group[b-d33vficdr5] {
+    margin-bottom: 20px; /* Aumento del margen para más espacio entre inputs */
+}
+
+/* Estilos para los inputs */
+input[type="text"][b-d33vficdr5], input[type="password"][b-d33vficdr5] {
+    width: 100%;
+    padding: 12px; /* Aumento del padding para inputs más grandes */
+    margin: 5px 0; /* Espacio vertical entre inputs */
+    border: 1px solid #9D6B29;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilos para los botones */
+.form-button[b-d33vficdr5] {
+    width: 100%;
+    padding: 12px; /* Botones más grandes */
+    background-color: #B5832F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button.secondary[b-d33vficdr5] {
+    background-color: #BF8B30;
+    margin-top: 10px;
+}
+
+.form-button:hover[b-d33vficdr5] {
+    background-color: #B07D2E;
+}
+
+/* Estilos para mensajes de alerta */
+.alert-message[b-d33vficdr5] {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 4px;
+    text-align: center;
+}

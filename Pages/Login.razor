@@ -1,0 +1,118 @@
+@page "/login"
+@layout LoginLayout
+
+@inject NavigationManager navigationManager
+
+@if (showLoginForm)
+{
+    <div class="form-container login-container">
+        <h2>Login de Afiliado</h2>
+        <EditForm Model="loginModel" OnValidSubmit="HandleLogin">
+            <div class="form-group">
+                <InputText id="email" @bind-Value="loginModel.Email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+                <InputText id="password" type="password" @bind-Value="loginModel.Password" placeholder="Contraseña" />
+            </div>
+            <button class="form-button" type="submit">Iniciar Sesión</button>
+        </EditForm>
+        <button class="form-button secondary" @onclick="ShowRegisterForm">Regístrate</button>
+    </div>
+}
+else
+{
+    <div class="form-container register-container">
+        <h2>Registro de Afiliado</h2>
+        @if (!string.IsNullOrEmpty(message))
+        {
+            <div class="alert-message">@message</div>
+        }
+        <EditForm Model="registerModel" OnValidSubmit="HandleRegister">
+            <div class="form-group">
+                <InputText id="reg-first-name" @bind-Value="registerModel.FirstName" placeholder="Nombre" />
+            </div>
+            <div class="form-group">
+                <InputText id="reg-last-name" @bind-Value="registerModel.LastName" placeholder="Apellidos" />
+            </div>
+            <div class="form-group">
+                <InputText id="reg-phone" @bind-Value="registerModel.PhoneNumber" placeholder="Teléfono" />
+            </div>
+            <div class="form-group">
+                <InputText id="reg-email" @bind-Value="registerModel.Email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+                <InputText id="reg-password" type="password" @bind-Value="registerModel.Password" placeholder="Contraseña" />
+            </div>
+            <div class="form-group">
+                <InputText id="reg-confirm-password" type="password" @bind-Value="registerModel.ConfirmPassword" placeholder="Confirmar Contraseña" />
+            </div>
+            <button class="form-button" type="submit">Registrarse</button>
+        </EditForm>
+        <button class="form-button secondary" @onclick="ShowLoginForm">Ya tengo cuenta</button>
+    </div>
+}
+
+@code {
+    private bool showLoginForm = true;
+    private string message = "";
+    private LoginModel loginModel = new LoginModel();
+    private RegisterModel registerModel = new RegisterModel();
+
+    private void ShowLoginForm()
+    {
+        showLoginForm = true;
+    }
+
+    private void ShowRegisterForm()
+    {
+        showLoginForm = false;
+    }
+
+    private void HandleLogin()
+    {
+        // Simula un inicio de sesión exitoso si el correo electrónico y la contraseña coinciden
+        if (loginModel.Email == "usuario@example.com" && loginModel.Password == "password123")
+        {
+            navigationManager.NavigateTo("/");
+        }
+        else
+        {
+            // Manejar el inicio de sesión fallido
+        }
+    }
+
+    private void HandleRegister()
+    {
+        // Aquí puedes añadir lógica de validación simple. Por ejemplo:
+        if (!string.IsNullOrWhiteSpace(registerModel.Email) &&
+            !string.IsNullOrWhiteSpace(registerModel.Password) &&
+            registerModel.Password == registerModel.ConfirmPassword &&
+            !string.IsNullOrWhiteSpace(registerModel.FirstName) &&
+            !string.IsNullOrWhiteSpace(registerModel.LastName) &&
+            !string.IsNullOrWhiteSpace(registerModel.PhoneNumber))
+        {
+            message = "Registro exitoso";
+            ShowLoginForm();
+        }
+        else
+        {
+            message = "Error en el registro";
+        }
+    }
+
+    public class LoginModel
+    {
+        public string Email { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+    }
+
+    public class RegisterModel
+    {
+        public string Email { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public string ConfirmPassword { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string PhoneNumber { get; set; } = string.Empty;
+    }
+}
