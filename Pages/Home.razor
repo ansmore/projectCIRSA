@@ -1,15 +1,18 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 
-<div class="bg-custom-jumbotron p-5 rounded-lg m-3">
-    <h1 class="display-4">Bienvenidos a CIRSA</h1>
-        <p class="lead">Descubre las mejores oportunidades de afiliados en el mundo del juego y las apuestas.</p>
-            <hr class="my-4">
-            <p>Únete a nosotros y obtén recompensas exclusivas.</p>
-            <a class="btn btn-custom-primary btn-lg" href="/login" role="button">Comienza ahora</a>
+<div>
+    <img src="../logonegro1CIRSA.png" class="img-fluid mr-3" alt="" style="height: 2%;">
 </div>
 
-    <div class="container mb-5">
+<div class="h-100 flex .justify-content-between">
+    <div class="bg-custom-jumbotron rounded-lg p-10 w-100">
+        <h1 class="display-4">Bienvenidos a CIRSA</h1>
+        <p class="lead">Descubre las mejores oportunidades de afiliados en el mundo del juego y las apuestas.</p>
+        <p>Únete a nosotros y obtén recompensas exclusivas.</p>
+    </div>
+
+    <div class="container mb-5 w-100">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100 card-custom">
@@ -35,38 +38,40 @@
                     </div>
                 </div>
             </div>
+            <a class="btn btn-custom-primary btn-lg" href="/login" role="button">Comienza ahora</a>
         </div>
     </div>
 
-<footer class="footer bg-dark text-light py-3">
-    <div class="container">
-        <div class="row">
-            <!-- Columna izquierda: Acerca de la empresa -->
-            <div class="col-md-4">
-                <h5>CIRSA Casino</h5>
-                <p>Un lugar para disfrutar y experimentar el emocionante mundo del juego.</p>
+    <footer class="footer bg-dark text-light py-3 w-100 .justify-content-end">
+        <div class="container">
+            <div class="row">
+                <!-- Columna izquierda: Acerca de la empresa -->
+                <div class="col-md-4">
+                    <h5>CIRSA Casino</h5>
+                    <p>Un lugar para disfrutar y experimentar el emocionante mundo del juego.</p>
+                </div>
+                <!-- Columna central: Links rápidos -->
+                <div class="col-md-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/login">Productos</a></li>
+                        <li><a href="/login">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Columna derecha: Redes sociales -->
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="/login"><i class="bi bi-facebook"></i></a>
+                    <a href="/login"><i class="bi bi-twitter"></i></a>
+                    <a href="/login"><i class="bi bi-instagram"></i></a>
+                </div>
             </div>
-            <!-- Columna central: Links rápidos -->
-            <div class="col-md-4">
-                <h5>Enlaces rápidos</h5>
-                <ul class="list-unstyled">
-                    <li><a href="/login">Productos</a></li>
-                    <li><a href="/login">Contacto</a></li>
-                </ul>
-            </div>
-            <!-- Columna derecha: Redes sociales -->
-            <div class="col-md-4">
-                <h5>Síguenos</h5>
-                <a href="/login"><i class="bi bi-facebook"></i></a>
-                <a href="/login"><i class="bi bi-twitter"></i></a>
-                <a href="/login"><i class="bi bi-instagram"></i></a>
+            <div class="text-center">
+                <p>&copy; 2023 CIRSA Casino. Todos los derechos reservados.</p>
             </div>
         </div>
-        <div class="text-center">
-            <p>&copy; 2023 CIRSA Casino. Todos los derechos reservados.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+</div>
 
 @code {
     protected override void OnInitialized()

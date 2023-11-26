@@ -3,10 +3,18 @@
     display: flex;
     flex-direction: column;
     color: #fff; /* Texto blanco para mayor contraste */
-    background: #956328; /* Color de fondo principal */
+    background: #e1d5a0; /* Color de fondo principal */
     min-height: 100vh;
     font-family: Open Sans; 
-    overflow-x: hidden;
+}
+
+.img-fluid {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10vh;
+    height: 90vh;
 }
 
 .display-4 {
@@ -17,13 +25,25 @@
 }
 
 .bg-custom-jumbotron {
-    background-color: #58585A;
-    color: #fff; /* Asegura que el texto sea legible */
+    display: flex;
+    background-color: #DCBE68;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1.6%;
+}
+
+.row {
+    margin-top: 5vh;
 }
 
 .btn-custom-primary {
     background-color: #956328;
     border-color: #956328;
+    margin-left: 43%;
+    padding: 1rem 1px;
+    margin-top: 10%;
+    width: 200px;
 }
 
 .btn-custom-primary:hover {
@@ -45,14 +65,20 @@
 }
 
 .footer {
-    border-top: 3px solid #875424;
     width: 100%;
     box-sizing: border-box;
-    height: 152px;
+    height: 150px;
+    margin-top: 11%;
+    padding-top: 0.5em;
 }
 
 .footer h5 {
     color: #C69332;
+}
+
+.col-md-4 {
+    position: relative;
+    margin-top: -4%;
 }
 
 .footer a {
