@@ -2901,9 +2901,7 @@ C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\staticwebassets\msbuild.bui
 C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.projectCIRSA.props
 C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.projectCIRSA.props
 C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\scopedcss\Layout\DashboardLayout.razor.rz.scp.css
 C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\scopedcss\Layout\LoginLayout.razor.rz.scp.css
-C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
 C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\scopedcss\bundle\projectCIRSA.styles.css
 C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\scopedcss\projectbundle\projectCIRSA.bundle.scp.css
 C:\Users\soufi\Desktop\projectCIRSA\obj\Debug\net8.0\compressed\qnvzp9cg6y.gz

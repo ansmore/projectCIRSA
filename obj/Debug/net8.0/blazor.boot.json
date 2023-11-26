@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "projectCIRSA",
   "resources": {
-    "hash": "sha256-jRMTZzTn5p6sLVFCCzp1iR11UHdPS/0wrDLb25PMOes=",
+    "hash": "sha256-cQdoyzG3ik20Tiz+UtZyYnhJZTjW/CzpFHYYi/wrMGQ=",
     "jsModuleNative": {
-      "dotnet.native.8.0.0.bpp8blb52d.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
+      "dotnet.native.8.0.0.aydbwh1tri.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.0.5tocf9mw5w.js": "sha256-WdSX3HQvnBYF0KJLZoOyHvTzMHetaob6PV0Kn2K+QXw="
+      "dotnet.runtime.8.0.0.poj4vlm4ug.js": "sha256-WdSX3HQvnBYF0KJLZoOyHvTzMHetaob6PV0Kn2K+QXw="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-Vr6ZXKoP77zgabrMIxQ1GbOkrxfx5XGqHO0odLhUIMY="
@@ -210,10 +210,10 @@
       "mscorlib.wasm": "sha256-cDuLeL3OCtVtiid/dyex1MVgbuzDSRwZxKzuP2Dp4mg=",
       "netstandard.wasm": "sha256-A0h86SDieTMoU/wU2JTszWCsUmMuguDcbap0b0BzsmI=",
       "System.Private.CoreLib.wasm": "sha256-/0DNIm/T0C07X7Tuz5uR8JvVCoAfEE2MnfPUSjyS9xc=",
-      "projectCIRSA.wasm": "sha256-YQ9WHBRSpzzRIbc5XQgIuyBePZfP2F0Fa2Y++8qY/R4="
+      "projectCIRSA.wasm": "sha256-v5fRCmEE20McQXhKjx+sYXWvuPe2lCM5tA+ldI3H/N4="
     },
     "pdb": {
-      "projectCIRSA.pdb": "sha256-jGqPwezZsXkM9iRK9lbnEexLx3cRU3tbu+xRgUn3AUE="
+      "projectCIRSA.pdb": "sha256-WusjchkeHXyxcTmP3uu1KVOQAc/W1LtxwNBRNcgh8YI="
     }
   },
   "cacheBootResources": true,
