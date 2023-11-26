@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\css\\home_personalizado.css",
+      "PackagePath": "staticwebassets\\css\\home_personalizado.css"
+    },
+    {
       "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
