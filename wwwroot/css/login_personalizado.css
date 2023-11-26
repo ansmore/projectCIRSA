@@ -1,0 +1,51 @@
+ .rounded-pill {
+        border-radius: 50px !important; /* Rounded inputs */
+    }
+
+    .btn-custom-login {
+        background-color: #8c5c29; /* Customize with your color */
+        color: white;
+    }
+
+    .btn-custom-register {
+        background-color: #8c5c29; /* Customize with your color */
+        color: white;
+    }
+
+    .btn-custom-login:hover, .btn-custom-register:hover {
+        background-color: #724421; /* Darker shade for hover effect */
+    }
+
+    .btn-link {
+        color: #8c5c29; /* Same color as your buttons for consistency */
+        text-decoration: underline;
+    }
+
+    .btn-link:hover {
+        color: #724421; /* Darker shade for hover effect */
+    }
+
+    .card {
+        border-radius: 20px; /* Rounded corners for card */
+    }
+
+    .card-body {
+        position: relative;
+    }
+
+    /* Custom styles for input */
+    .form-control::placeholder {
+        color: #aaa; /* Placeholder color */
+    }
+
+    .form-control:focus {
+        box-shadow: none; /* Removes the default focus shadow */
+    }
+
+    /* Message alert styling */
+    .alert-warning {
+        background-color: #ffd966; /* Customize with your color */
+        border-radius: 20px;
+        color: #8c5c29;
+        padding: 10px;
+    }

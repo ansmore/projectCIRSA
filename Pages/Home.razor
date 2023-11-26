@@ -1,16 +1,15 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 
-<div>
-    <img src="../logonegro1CIRSA.png" class="img-fluid mr-3" alt="" style="height: 2%;">
+<div class="header-container">
+    <img src="img/logo.svg" class="img-fluid" alt="">
+    <h1 class="display-4">Bienvenidos a CIRSA</h1>
+        <!-- <div class="bg-custom-jumbotron rounded-lg p-10 w-100">
+            <p class="lead">Descubre las mejores oportunidades de afiliados en el mundo del juego y las apuestas.</p>
+            <p>Únete a nosotros y obtén recompensas exclusivas.</p>
+        </div> -->
 </div>
 
-<div class="h-100 flex .justify-content-between">
-    <div class="bg-custom-jumbotron rounded-lg p-10 w-100">
-        <h1 class="display-4">Bienvenidos a CIRSA</h1>
-        <p class="lead">Descubre las mejores oportunidades de afiliados en el mundo del juego y las apuestas.</p>
-        <p>Únete a nosotros y obtén recompensas exclusivas.</p>
-    </div>
 
     <div class="container mb-5 w-100">
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -71,7 +70,6 @@
             </div>
         </div>
     </footer>
-</div>
 
 @code {
     protected override void OnInitialized()
