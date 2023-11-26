@@ -26,6 +26,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Alfred/Desktop/projectCIRSA/Layout/DashboardLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XERhc2hib2FyZExheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alfred/Desktop/projectCIRSA/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -49,10 +53,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Alfred/Desktop/projectCIRSA/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alfred/Desktop/projectCIRSA/Layout/DashboardLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XERhc2hib2FyZExheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-3me7renqrl
 
 [C:/Users/Alfred/Desktop/projectCIRSA/Layout/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XExvZ2luTGF5b3V0LnJhem9y
