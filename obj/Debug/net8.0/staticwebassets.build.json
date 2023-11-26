@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ibwYLy7bnRMyAMLyied7ANCF59wxyNPMFQKSww0QEQA=",
+  "Hash": "2bO5VCRYWfKvpy/rPDbO8GIHAEvh/OeSYymQM38zJX8=",
   "Source": "projectCIRSA",
   "BasePath": "/",
   "Mode": "Root",
@@ -7938,6 +7938,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\css\\home_personalizado.css",
+      "SourceId": "projectCIRSA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/home_personalizado.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home_personalizado.css"
     },
     {
       "Identity": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\favicon.png",

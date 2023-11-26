@@ -1,0 +1,79 @@
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff; /* Texto blanco para mayor contraste */
+    background: #956328; /* Color de fondo principal */
+    min-height: 100vh;
+    font-family: Open Sans; 
+    overflow-x: hidden;
+}
+
+.display-4 {
+    font-size: 69px;
+    font-weight: 700;
+    line-height: 94px;
+    letter-spacing: 0em;
+}
+
+.bg-custom-jumbotron {
+    background-color: #58585A;
+    color: #fff; /* Asegura que el texto sea legible */
+}
+
+.btn-custom-primary {
+    background-color: #956328;
+    border-color: #956328;
+}
+
+.btn-custom-primary:hover {
+    background-color: #875424;
+    border-color: white;
+    color: #F1BF32;
+}
+
+.card-custom {
+    border-color: #9D6B29; /* Color personalizado para los bordes de las tarjetas */
+}
+
+.card-title-custom {
+    color: #C69332;
+}
+
+.card-text {
+    color: black;
+}
+
+.footer {
+    border-top: 3px solid #875424;
+    width: 100%;
+    box-sizing: border-box;
+    height: 152px;
+}
+
+.footer h5 {
+    color: #C69332;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #F1BF32;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer .bi {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Ajustes para los íconos de redes sociales */
+.footer .bi-facebook:hover { color: #3b5998; }
+.footer .bi-twitter:hover { color: #00acee; }
+.footer .bi-instagram:hover { color: #C13584; }
