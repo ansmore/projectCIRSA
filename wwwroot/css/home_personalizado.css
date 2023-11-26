@@ -8,13 +8,19 @@
     font-family: Open Sans; 
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    background-color: #DCBE68;
+    margin-top: -20px;
+}
+
 .img-fluid {
-    z-index: 10;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: 10vh;
-    height: 90vh;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .display-4 {
@@ -22,16 +28,18 @@
     font-weight: 700;
     line-height: 94px;
     letter-spacing: 0em;
+    margin: 0;
 }
 
 .bg-custom-jumbotron {
     display: flex;
-    background-color: #DCBE68;
-    color: #fff;
     flex-direction: column;
     align-items: center;
+    background-color: #DCBE68;
+    color: #fff;
     margin-top: -1.6%;
 }
+
 
 .row {
     margin-top: 5vh;
@@ -78,7 +86,7 @@
 
 .col-md-4 {
     position: relative;
-    margin-top: -4%;
+    margin-top: -3%;
 }
 
 .footer a {
