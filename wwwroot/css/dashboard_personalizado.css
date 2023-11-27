@@ -1,0 +1,72 @@
+.dashboard-layout {
+    height: 93vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background: #e1d5a0;
+}
+
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background-color: #603A23;
+    color: white;
+}
+
+.btn:not(:disabled):not(.disabled):hover {
+    background-color: #875424;
+    border-color: white;
+    color: #F1BF32;
+}   
+
+.container-fluid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 0 -15px; 
+}
+
+.card {
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.custom-select, .btn {
+    margin-top: 10px;
+}
+
+
+#registrationMetricsChart {
+    flex-grow: 1;
+    max-height: 100%;
+}
+
+
+.col-lg-4, .col-lg-8 {
+    padding: 15px;
+}
+
+.col-lg-4 {
+    flex: 0 0 33.333333%; 
+    max-width: 33.333333%;
+}
+
+.col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}

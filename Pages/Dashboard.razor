@@ -1,0 +1,245 @@
+@page "/dashboard"
+@layout DashboardLayout
+@inject IJSRuntime JSRuntime
+@using Microsoft.AspNetCore.Components.Web
+
+<PageTitle>Dashboard Afiliado</PageTitle>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Botones para Cambiar de Página -->
+<div class="mb-3">
+    <button class="btn btn-secondary" @onclick="() => ChangePage(1)">Configuración</button>
+    <button class="btn btn-secondary" @onclick="() => ChangePage(2)">Gráfica</button>
+</div>
+
+<!-- Contenido de la Página 1 -->
+@if (currentPage == 1)
+{
+    <div class="container-fluid p-3">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalización del Dashboard</h5>
+                        <div class="form-group">
+                            <label for="backgroundColorSelect">Color de Fondo</label>
+                            <select id="backgroundColorSelect" @onchange="ChangeBackgroundColor" class="form-select">
+                                <option value="#f8f9fa">Por defecto</option>
+                                <option value="#3498db">Azul</option>
+                                <option value="#2ecc71">Verde</option>
+                                <option value="#e74c3c">Rojo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="textColorSelect">Color de Texto</label>
+                            <select id="textColorSelect" @onchange="ChangeTextColor" class="form-select">
+                                <option value="#212529">Por defecto</option>
+                                <option value="#ffffff">Blanco</option>
+                                <option value="#000000">Negro</option>
+                                <option value="#f39c12">Naranja</option>
+                            </select>
+                        </div>
+                        <div class="mt-auto">
+                            <button class="btn btn-primary w-100">Aplicar Estilo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 mb-4">
+                <div class="card" style="@GetBackgroundColor()">
+                    <div class="card-body">
+                        <h1 class="card-title" style="@GetTextColor()">Bienvenido a tu Dashboard de Afiliado</h1>
+                        <p role="status" class="card-text">Enlace generado: <a href="#" target="_blank" class="link-primary">http://localhost:5134/?ref=link100%realNoFakeLinkenMegaUpload.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Contenido de la Página 2 -->
+@if (currentPage == 2)
+{
+    <div class="container-fluid p-0 overflow-hidden">
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Métricas de Registro por Semana</h2>
+                        <div class="mb-3">
+                            <label for="monthSelect">Seleccionar Mes</label>
+                            <select id="monthSelect" @onchange="ChangeMonth" class="form-select">
+                                <option value="0">Enero</option>
+                                <option value="1">Febrero</option>
+                                <option value="2">Marzo</option>
+                                <option value="3">Abril</option>
+                                <option value="4">Mayo</option>
+                                <option value="5">Junio</option>
+                                <option value="6">Julio</option>
+                                <option value="7">Agosto</option>
+                                <option value="8">Septiembre</option>
+                                <option value="9">Octubre</option>
+                                <option value="10">Noviembre</option>
+                                <option value="11">Diciembre</option>
+                            </select>
+                        </div>
+                        <canvas id="registrationMetricsChart" class="chart" style="min-height: 100vh; width: 100%;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private int currentPage = 1; // Página inicial
+    private bool isChartInitialized = false;
+
+    private string backgroundColor = "#f8f9fa";
+    private string textColor = "#212529";
+    private int selectedMonth = 0; // Enero
+
+    private void ChangeBackgroundColor(ChangeEventArgs e)
+    {
+        backgroundColor = e.Value.ToString();
+    }
+
+    private void ChangeTextColor(ChangeEventArgs e)
+    {
+        textColor = e.Value.ToString();
+    }
+
+    private void ChangeMonth(ChangeEventArgs e)
+    {
+        selectedMonth = int.Parse(e.Value?.ToString() ?? "0");
+        UpdateChart();
+
+        // Verifica si está en la página 2 y si el gráfico no ha sido inicializado
+        if (currentPage == 2 && !isChartInitialized)
+        {
+            InitializeChart();
+        }
+    }
+
+    private void ChangePage(int page)
+    {
+        currentPage = page;
+        if (currentPage == 2)
+        {
+            selectedMonth = 0; // Restablecer a Enero
+            InitializeChart(); // Asegurarse de que el gráfico se inicialice y actualice
+        }
+    }
+
+    private async Task InitializeChart()
+    {
+        if (!isChartInitialized)
+        {
+            await JSRuntime.InvokeVoidAsync("initializeChartJs");
+            isChartInitialized = true;
+        }
+        await UpdateChart(); // Asegúrate de que la gráfica se actualiza con los datos actuales
+    }
+
+    private string GetCustomStyles()
+    {
+        return $"background-color: {backgroundColor}; color: {textColor};";
+    }
+
+    private string GetBackgroundColor()
+    {
+        return $"background-color: {backgroundColor};";
+    }
+
+    private string GetTextColor()
+    {
+        return $"color: {textColor};";
+    }
+
+    private async Task UpdateChart()
+    {
+        var weeks = new[] { "Semana 1", "Semana 2", "Semana 3", "Semana 4" };
+        var data = GetMonthlyData(selectedMonth);
+
+        await JSRuntime.InvokeVoidAsync("updateChart", weeks, data);
+    }
+
+    private int[] GetMonthlyData(int month)
+    {
+        // Ejemplo de datos ficticios para cada mes
+        return month switch
+        {
+            0 => new[] { 10, 20, 30, 40 },
+            1 => new[] { 15, 25, 35, 45 },
+            2 => new[] { 20, 30, 40, 50 },
+            3 => new[] { 2, 3, 10, 5 },
+            4 => new[] { 1, 10, 4, 7 },
+            5 => new[] { 10, 3, 12, 20 },
+            6 => new[] { 12, 19, 9, 5 },
+            7 => new[] { 17, 21, 21, 35 },
+            8 => new[] { 0, 12, 13, 2 },
+            9 => new[] { 24, 12, 32, 24 },
+            10 => new[] { 12, 2, 14, 1 },
+            11 => new[] { 42, 34, 41, 31 },
+            _ => new[] { 0, 0, 0, 0 }
+        };
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (currentPage == 2)
+        {
+            await InitializeChart();
+        }
+    }
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+    var myChart;
+
+    function initializeChart() {
+        var ctx = document.getElementById('registrationMetricsChart').getContext('2d');
+        myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Registros por semana',
+                    data: [],
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: { beginAtZero: true }
+                    }]
+                }
+            }
+        });
+    }
+
+    function updateChart(weeks, data) {
+        if (myChart) {
+            myChart.data.labels = weeks;
+            myChart.data.datasets.forEach((dataset) => {
+                dataset.data = data;
+            });
+            myChart.update();
+        } else {
+            console.error("El gráfico aún no ha sido inicializado.");
+        }
+    }
+
+    window.initializeChartJs = function() {
+        if (typeof Chart === "undefined") {
+            console.error("Chart.js is not loaded yet!");
+            return;
+        }
+        initializeChart();
+    }
+</script>

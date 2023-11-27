@@ -1,0 +1,73 @@
+@page "/client-register"
+@layout LoginLayout
+
+@inject NavigationManager navigationManager
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Registro de Cliente</h2>
+                    @if (!string.IsNullOrEmpty(message))
+                    {
+                        <div class="alert alert-warning">@message</div>
+                    }
+
+                    <EditForm Model="clientRegisterModel" OnValidSubmit="HandleClientRegister" class="mt-4">
+                        <div class="mb-3">
+                            <InputText id="client-first-name" @bind-Value="clientRegisterModel.FirstName" class="form-control" placeholder="Nombre" />
+                        </div>
+                        <div class="mb-3">
+                            <InputText id="client-last-name" @bind-Value="clientRegisterModel.LastName" class="form-control" placeholder="Apellidos" />
+                        </div>
+                        <div class="mb-3">
+                            <InputText id="client-email" @bind-Value="clientRegisterModel.Email" class="form-control" placeholder="Email" />
+                        </div>
+                        <div class="mb-3">
+                            <InputText id="client-phone" @bind-Value="clientRegisterModel.PhoneNumber" class="form-control" placeholder="Teléfono" />
+                        </div>
+                        <div class="mb-3">
+                            <InputText id="client-password" type="password" @bind-Value="clientRegisterModel.Password" class="form-control" placeholder="Contraseña" />
+                        </div>
+                        <div class="mb-3">
+                            <InputText id="client-confirm-password" type="password" @bind-Value="clientRegisterModel.ConfirmPassword" class="form-control" placeholder="Confirmar Contraseña" />
+                        </div>
+                        <button class="btn btn-primary w-100" type="submit">Registrarse</button>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private ClientRegisterModel clientRegisterModel = new ClientRegisterModel();
+    private string message = "";
+
+    private void HandleClientRegister()
+    {
+        if (!string.IsNullOrWhiteSpace(clientRegisterModel.Email) &&
+            !string.IsNullOrWhiteSpace(clientRegisterModel.Password) &&
+            clientRegisterModel.Password == clientRegisterModel.ConfirmPassword)
+        {
+            message = "Registro exitoso";
+            navigationManager.NavigateTo("/");
+            
+        }
+        else
+        {
+            message = "Error en el registro";
+        }
+    }
+
+    public class ClientRegisterModel
+    {
+        public string Email { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public string ConfirmPassword { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string PhoneNumber { get; set; } = string.Empty;
+    }
+}

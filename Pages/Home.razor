@@ -1,7 +1,86 @@
 ﻿@page "/"
+@inject NavigationManager NavigationManager
 
-<PageTitle>Home</PageTitle>
+<div class="header-container">
+    <img src="img/logo.svg" id="img" class="img-fluid" alt="">
+    <h1 class="display-4">Bienvenidos a CIRSA</h1>
+        <!-- <div class="bg-custom-jumbotron rounded-lg p-10 w-100">
+            <p class="lead">Descubre las mejores oportunidades de afiliados en el mundo del juego y las apuestas.</p>
+            <p>Únete a nosotros y obtén recompensas exclusivas.</p>
+        </div> -->
+</div>
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+    <div class="container mb-5 w-100">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 card-custom">
+                    <div class="card-body">
+                        <h2 class="card-title card-title-custom">Facilidad de Uso</h2>
+                        <p class="card-text">Una plataforma intuitiva y fácil de usar, diseñada tanto para principiantes como para expertos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 card-custom">
+                    <div class="card-body">
+                        <h2 class="card-title card-title-custom">Herramientas Personalizables</h2>
+                        <p class="card-text">Personaliza tu dashboard y aprovecha al máximo nuestras herramientas de análisis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 card-custom">
+                    <div class="card-body">
+                        <h2 class="card-title card-title-custom">Soporte Constante</h2>
+                        <p class="card-text">Nuestro equipo de soporte está siempre disponible para ayudarte en cada paso del camino.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-custom-primary btn-lg" id="primary" href="/login" role="button">Comienza ahora</a>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-light py-3 w-100 .justify-content-end">
+        <div class="container">
+            <div class="row">
+                <!-- Columna izquierda: Acerca de la empresa -->
+                <div class="col-md-4">
+                    <h5>CIRSA Casino</h5>
+                    <p>Un lugar para disfrutar y experimentar el emocionante mundo del juego.</p>
+                </div>
+                <!-- Columna central: Links rápidos -->
+                <div class="col-md-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/login">Productos</a></li>
+                        <li><a href="/login">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Columna derecha: Redes sociales -->
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="/login"><i class="bi bi-facebook"></i></a>
+                    <a href="/login"><i class="bi bi-twitter"></i></a>
+                    <a href="/login"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>&copy; 2023 CIRSA Casino. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        var uri = new Uri(NavigationManager.Uri);
+
+        var queryParams = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+        if (queryParams.ContainsKey("ref") && queryParams["ref"] == "link100%realNoFakeLinkenMegaUpload.com")
+        {
+            NavigationManager.NavigateTo("/client-register");
+        }
+    }
+}

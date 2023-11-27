@@ -1,0 +1,70 @@
+.login-layout {
+    background: #DCBE68;
+    height: 100%;
+    font-family: Open Sans;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.img-fluid {
+    margin-left: -9.3%;
+    margin-top: auto;
+    margin-bottom: -3.65%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    overflow-wrap: break-word;
+    background: #E9D99F;
+    background-clip: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    margin-top: 50%;
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.card-title {
+    color: #371D11;
+}
+
+.rounded-pill {
+    border-radius: 50px !important; /* Rounded inputs */
+}
+
+.btn-primary {
+    background-color: #603A23; /* Customize with your color */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #E9D99F; /* Customize with your color */
+    color: #371D11;
+    }
+
+.btn-primary:hover{
+    background-color: #875424;
+    border-color: white;
+    color: #F1BF32;
+}
+
+.btn-secondary:hover{
+    background-color: #875424;
+    border-color: white;
+    color: #F1BF32;
+}
+
+/* Message alert styling */
+.alert-warning {
+    background-color: red; /* Customize with your color */
+    border-radius: 20px;
+    color: #8c5c29;
+    padding: 10px;
+}
