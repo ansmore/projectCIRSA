@@ -62,6 +62,7 @@ Como un proyecto alojado en línea, no requiere pasos de instalación para los u
 - **[Alfred Pérez Herranz]**: Encargado del desarrollo del frontend, incluyendo la página de inicio y la estilización con Bootstrap.
 - **[Alfred Pérez Herranz]**: Responsable del backend y la lógica en Blazor, incluyendo la implementación del dashboard de afiliados.
 - **[Alfred Pérez Herranz]**: Focalizado en la integración de la lógica de redirección.
+- **[Alfred Pérez Herranz]**: Creación archivo Dockerfile.
 - **[Soufian Ahlal Aggadi]**: Responsable del procesamiento de URLs personalizadas.
 - **[Sofian Ahlal Aggadi y Alfred Pérez Herranz]**: Responsables del css para estilos personalizados de todas las vistas.
 - **[Soufain Ahlal Aggadi]**: Guia de lanzamiento-> 
