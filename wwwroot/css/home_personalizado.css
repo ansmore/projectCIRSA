@@ -17,7 +17,7 @@
     margin-top: -20px;
 }
 
-.img-fluid {
+#img {
     margin-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -47,7 +47,7 @@
     margin-top: 5vh;
 }
 
-.btn-custom-primary {
+#primary {
     background-color: #A67028;
     border-color: #956328;
     margin-left: 43%;
@@ -78,17 +78,11 @@
     width: 100%;
     box-sizing: border-box;
     height: 150px;
-    margin-top: 11%;
-    padding-top: 0.5em;
+    margin-top: 5.36%;
 }
 
 .footer h5 {
     color: #C69332;
-}
-
-.col-md-4 {
-    position: relative;
-    margin-top: -3%;
 }
 
 .footer a {
