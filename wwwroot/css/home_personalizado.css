@@ -29,6 +29,8 @@
     line-height: 94px;
     letter-spacing: 0em;
     margin: 0;
+    margin-left: 13%;
+
 }
 
 .bg-custom-jumbotron {
@@ -46,7 +48,7 @@
 }
 
 .btn-custom-primary {
-    background-color: #956328;
+    background-color: #A67028;
     border-color: #956328;
     margin-left: 43%;
     padding: 1rem 1px;
