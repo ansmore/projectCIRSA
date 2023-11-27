@@ -1,59 +1,59 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\obj\\Debug\\net8.0\\compressed\\16ew8znr72.gz",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\obj\\Debug\\net8.0\\compressed\\qnvzp9cg6y.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\css\\dashboard_personalizado.css",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\css\\dashboard_personalizado.css",
       "PackagePath": "staticwebassets\\css\\dashboard_personalizado.css"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\css\\home_personalizado.css",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\css\\home_personalizado.css",
       "PackagePath": "staticwebassets\\css\\home_personalizado.css"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\css\\login_personalizado.css",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\css\\login_personalizado.css",
       "PackagePath": "staticwebassets\\css\\login_personalizado.css"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\img\\elipses.svg",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\img\\elipses.svg",
       "PackagePath": "staticwebassets\\img\\elipses.svg"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\img\\logo.svg",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\img\\logo.svg",
       "PackagePath": "staticwebassets\\img\\logo.svg"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\index.html",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\Alfred\\Desktop\\projectCIRSA\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\soufi\\Desktop\\projectCIRSA\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

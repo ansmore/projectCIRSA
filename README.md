@@ -62,9 +62,13 @@ Como un proyecto alojado en línea, no requiere pasos de instalación para los u
 - **[Alfred Pérez Herranz]**: Encargado del desarrollo del frontend, incluyendo la página de inicio y la estilización con Bootstrap.
 - **[Alfred Pérez Herranz]**: Responsable del backend y la lógica en Blazor, incluyendo la implementación del dashboard de afiliados.
 - **[Alfred Pérez Herranz]**: Focalizado en la integración de la lógica de redirección.
-- **[Sofian]**: Responsable del procesamiento de URLs personalizadas.
-- **[Sofian y Alfred Pérez Herranz]**: Responsables del css para estilos personalizados de todas las vistas.
-
+- **[Soufian Ahlal Aggadi]**: Responsable del procesamiento de URLs personalizadas.
+- **[Sofian Ahlal Aggadi y Alfred Pérez Herranz]**: Responsables del css para estilos personalizados de todas las vistas.
+- **[Soufain Ahlal Aggadi]**: Guia de lanzamiento-> 
+Primer paso: escribir comando "dotnet publish -c Release" en terminal.
+Segundo paso: a continuación, escribir este otro comando "docker build -t blazorapp ." Dará fallo probablemente y te sugerirá instalar una extension llamada Docker. Hazlo y pon el comando otra vez.
+Tercer paso: escribir este último comando "docker run -p 8080:80 blazorapp"
+(No poner las "" a la hora de meter los comandos en la terminal ;)
 ---
 
 Esta documentación se presenta como un informe integral del proyecto, destacando las decisiones clave tomadas durante el desarrollo y las contribuciones individuales de los miembros del equipo, en un contexto de tiempo limitado.
