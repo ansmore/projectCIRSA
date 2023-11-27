@@ -3940,7 +3940,6 @@ C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\staticwebassets\msbuild.bu
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.projectCIRSA.props
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\scopedcss\bundle\projectCIRSA.styles.css
-C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\scopedcss\projectbundle\projectCIRSA.bundle.scp.css
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\compressed\16ew8znr72.gz
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\compressed\i0a5n99ayu.gz
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\compressed\6j76joz11v.gz
@@ -4152,4 +4151,3 @@ C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\projectCIRSA.dll
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\refint\projectCIRSA.dll
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\projectCIRSA.pdb
 C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\ref\projectCIRSA.dll
-C:\Users\Alfred\Desktop\projectCIRSA\obj\Debug\net8.0\scopedcss\Layout\LoginLayout.razor.rz.scp.css
